@@ -18,7 +18,7 @@ const PopularMovieList = ()=>{
     console.log(movie)
     return(
       <div className="wrapper" key={i}> 
-        <img className="movie-image" src={`${imageUrl}${movie.poster_path}`} alt='img-movie' />
+        <img className="movie-image" src={`${imageUrl}${movie.poster_path}`} alt='img-movie' width={250}/>
         <div className="movie-title">{movie.title}</div>
         <div className="movie-date">Tanggal Rilis : {movie.release_date}</div>
         <div className="movie-rating">Rating : {movie.vote_average} ⭐</div>
